@@ -64,6 +64,10 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="1d81", ATTRS{idProduct}=="5721", MODE="0666"
 ```
 (Adjust vendor/product ID to match your own printer — check with `lsusb`.)
 
+## Demo
+
+🎥 [Watch the demo](YOUR_VIDEO_LINK_HERE)
+
 ## Challenges and what I learned
 
 - **Diagnosed a defective camera module**: an initial fisheye camera produced a persistent pink color cast and unfixable blur. Root-caused it to a NoIR sensor variant (missing IR-cut filter) combined with a failed focus mechanism, by systematically testing white balance settings, ambient lighting, and tuning files before concluding the hardware itself was faulty — leading to a targeted replacement purchase with the correct specs (IR filter, adjustable focus).
