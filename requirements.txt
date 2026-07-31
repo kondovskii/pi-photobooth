@@ -1,0 +1,4 @@
+Pillow
+python-escpos
+pyusb
+picamera2
