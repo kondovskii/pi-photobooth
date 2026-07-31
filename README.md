@@ -67,7 +67,7 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="1d81", ATTRS{idProduct}=="5721", MODE="0666"
 
 ## Demo
 
-🎥 [Watch the demo](YOUR_VIDEO_LINK_HERE)
+🎥 [Watch the demo](https://www.tiktok.com/@wiredbysarah/video/7668786885686332679?is_from_webapp=1&sender_device=pc&web_id=7614944891822753298)
 
 ## Challenges and what I learned
 
