@@ -32,7 +32,7 @@ A portable, battery-powered photobooth built on a Raspberry Pi 4B. Captures a ph
 5. The result **prints automatically** over USB using the ESC/POS protocol, while the screen shows a printing animation.
 6. The UI returns to idle, ready for the next photo.
 
-See [`wiring_diagram.png`](images/wiring_diagram.png) for the full power and data wiring layout.
+See [`wiring_diagram.png`](photobooth_wiring_diagram.png) for the full power and data wiring layout.
 
 ## Repo contents
 
