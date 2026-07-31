@@ -64,7 +64,6 @@ SUBSYSTEM=="usb", ATTRS{idVendor}=="1d81", ATTRS{idProduct}=="5721", MODE="0666"
 ## Challenges and what I learned
 
 - **Diagnosed a defective camera module**: an initial fisheye camera produced a persistent pink color cast and unfixable blur. Root-caused it to a NoIR sensor variant (missing IR-cut filter) combined with a failed focus mechanism, by systematically testing white balance settings, ambient lighting, and tuning files before concluding the hardware itself was faulty — leading to a targeted replacement purchase with the correct specs (IR filter, adjustable focus).
-- **Power delivery budgeting**: calculated worst-case simultaneous current draw across the Pi, touchscreen, camera, and thermal printer (whose print head alone spikes to 2.5A) against a 5A buck converter budget, using `vcgencmd get_throttled` to empirically verify no undervoltage occurred under real combined load.
 - **USB resource conflicts**: resolved a "Resource busy" error caused by not explicitly closing the USB connection to the printer between print jobs.
 - **Real-time UI/camera synchronization**: moved from shelling out to `rpicam-hello`/`rpicam-jpeg` as separate OS-level processes (which caused window layering and timing issues) to using the `picamera2` Python library directly, allowing the live preview to render inside the same Tkinter canvas as the countdown overlay, and guaranteeing the capture happens at the exact instant of the screen flash.
 - **Linux permissions**: diagnosed and fixed a udev permissions issue preventing non-root USB access to the printer.
