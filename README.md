@@ -1,8 +1,12 @@
 # Thermal Photobooth
-
 A portable, battery-powered photobooth built on a Raspberry Pi 4B. Captures a photo through a fisheye lens, applies a 1-bit dithered black-and-white filter, and instantly prints it on embedded thermal receipt paper — all through a custom touchscreen UI.
 
-![UI Screenshot](images/ui_screenshot.jpg)
+![Full System](images/full_system.jpg)
+
+| Idle screen | Printing screen |
+|---|---|
+| ![Idle Screen](images/ui_home.png) | ![Printing Screen](images/ui_printing.png) |
+
 ![Sample Output](images/sample_output.jpg)
 
 ## Features
