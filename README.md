@@ -7,7 +7,7 @@ A portable, battery-powered photobooth built on a Raspberry Pi 4B. Captures a ph
 |---|---|
 | ![Idle Screen](images/ui_home.png) | ![Printing Screen](images/ui_printing.png) |
 
-![Sample Output](images/sample_output.jpg)
+
 
 ## Features
 
